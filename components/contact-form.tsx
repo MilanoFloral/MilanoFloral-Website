@@ -41,10 +41,9 @@ export function ContactForm() {
         <label className="space-y-2 text-sm font-medium">Preferred event date<Input name="eventDate" type="date" /></label>
         <label className="space-y-2 text-sm font-medium">Event type
           <select name="eventType" required defaultValue="" className="flex h-12 w-full rounded-xl border border-[var(--border)] bg-white/70 px-4 text-sm outline-none transition focus:border-[var(--brand)] focus:ring-4 focus:ring-[var(--brand-soft)]">
-            <option value="" disabled>Select an event</option><option>Wedding</option><option>Engagement</option><option>Homecoming</option><option>Destination event</option><option>Private celebration</option><option>Other</option>
+            <option value="" disabled>Select an event</option><option>Wedding</option><option>Engagement</option><option>Homecoming</option><option>Destination event</option><option>Private celebration</option><option>Wedding fireworks</option><option>Other</option>
           </select>
         </label>
-        <label className="space-y-2 text-sm font-medium">Location<Input name="location" required placeholder="Location" /></label>
         <label className="space-y-2 text-sm font-medium">Estimated investment
           <select name="budget" defaultValue="" className="flex h-12 w-full rounded-xl border border-[var(--border)] bg-white/70 px-4 text-sm outline-none transition focus:border-[var(--brand)] focus:ring-4 focus:ring-[var(--brand-soft)]">
             <option value="">Prefer to discuss</option><option>Below LKR 250,000</option><option>LKR 250,000 – 500,000</option><option>LKR 500,000 – 1,000,000</option><option>Above LKR 1,000,000</option>
