@@ -11,7 +11,6 @@ import { buttonVariants } from "@/components/ui/button";
 
 
 import {
-  packages,
   process,
   services,
   testimonials,
@@ -22,7 +21,6 @@ import {
   ArrowRight,
   Check,
   Quote,
-  Sparkles,
 } from "lucide-react";
 
 const selectedPortfolioImages = [
@@ -364,73 +362,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* =========================================================
-          FIREWORK PACKAGES
-      ========================================================== */}
-      <section className="section-space">
-        <div className="container-shell grid items-start gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-          <AnimatedSection className="lg:sticky lg:top-28">
-            <p className="eyebrow">Wedding fireworks</p>
-
-            <h2 className="display mt-6 text-5xl leading-[1.02] sm:text-6xl">
-              End the evening with a little more{" "}
-              <em className="text-[var(--brand)]">magic.</em>
-            </h2>
-
-            <p className="mt-6 leading-8 text-[var(--muted-foreground)]">
-              Venue-conscious pyrotechnic displays, timed around entrances,
-              cake cutting or your final dance.
-            </p>
-
-            <Link
-              href="/packages"
-              className={`${buttonVariants()} mt-8`}
-            >
-              View all packages
-              <Sparkles className="size-4" />
-            </Link>
-          </AnimatedSection>
-
-          <div className="space-y-5">
-            {packages.map((item, index) => (
-              <AnimatedSection
-                key={item.name}
-                delay={index * 0.07}
-                className={`rounded-[2rem] border p-7 sm:p-9 ${
-                  item.featured
-                    ? "border-[var(--brand)] bg-[var(--brand-soft)]"
-                    : "bg-white/60"
-                }`}
-              >
-                <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-deep)]">
-                      {item.name} package
-                    </p>
-
-                    <p className="display mt-2 text-4xl">
-                      {item.price}
-
-                      <span className="ml-1 text-base text-[var(--muted-foreground)]">
-                        /-
-                      </span>
-                    </p>
-                  </div>
-
-                  <item.icon
-                    className="size-9 text-[var(--brand)]"
-                    strokeWidth={1.3}
-                  />
-                </div>
-
-                <p className="mt-5 text-sm leading-7 text-[var(--muted-foreground)]">
-                  {item.description}
-                </p>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* =========================================================
           TESTIMONIALS
