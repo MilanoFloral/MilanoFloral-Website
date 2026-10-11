@@ -18,8 +18,8 @@ export default function AboutPage() {
           <AnimatedSection className="relative">
             <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem]">
               <Image
-                src="/20251010_140957.jpg"
-                alt="Wedding planner arranging flowers"
+                src="/CEO.png"
+                alt="Dilukshi Dias, Founder and Creative Director of MilanoFloral"
                 width={1000}
                 height={1250}
                 className="h-full w-full object-cover"
